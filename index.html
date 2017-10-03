@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>Ready to play</title>
+  </head>
+  <body>
+
+    <nav id="menu-nav" class="playlists">
+      <header class="playlists-header">
+        <img src="./img/versace.jpg" alt="Versace logo">
+        <h2>Playlists</h2>
+        <button id="close">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+            <path fill="#000000" d="M15 0h1v11.5c0 1.381-1.567 2.5-3.5 2.5s-3.5-1.119-3.5-2.5c0-1.381 1.567-2.5 3.5-2.5 0.979 0 1.865 0.287 2.5 0.751v-5.751l-8 1.778v7.722c0 1.381-1.567 2.5-3.5 2.5s-3.5-1.119-3.5-2.5c0-1.381 1.567-2.5 3.5-2.5 0.979 0 1.865 0.287 2.5 0.751v-9.751l9-2z"></path>
+          </svg>
+        </button>
+      </header>
+      <section class="list-container">
+        <ul>
+          <li><a href="#">Good morning</a></li>
+          <li><hr></li>
+          <li><a href="#">Good afternoon</a></li>
+          <li><hr></li>
+          <li><a href="#">Good night</a></li>
+          <li><hr></li>
+          <li><a href="#">Sport motivation</a></li>
+          <li><hr></li>
+          <li><a href="#">Coffee break</a></li>
+          <li><hr></li>
+          <li><a href="#">Morning routine</a></li>
+        </ul>
+      </section>
+    </nav>
+
+    <main id="main-nav">
+      <header>
+        <div id="nav-icon1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h2>Now Playing</h2>
+        <img src="./img/versace.jpg" alt="Versace Logo">
+      </header>
+
+      <section class="infos">
+        <div class="img-wrapper">
+          <div class="layer"></div>
+          <div class="titles">
+            <p class="title">All Stars</p>
+            <p class="sub-title">Martin Solveig</p>
+          </div>
+          <img src="./img/cover.jpg" alt="Album Image">
+        </div>
+
+        <div class="cmds">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+            <path fill="#000000" d="M2 5h10v3l4-4-4-4v3h-12v6h2zM14 11h-10v-3l-4 4 4 4v-3h12v-6h-2z"></path>
+          </svg>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+            <path fill="#000000" d="M12 11h-1.586l-2.5-2.5 2.5-2.5h1.586v2.5l3.5-3.5-3.5-3.5v2.5h-2c-0.265 0-0.52 0.105-0.707 0.293l-2.793 2.793-2.793-2.793c-0.188-0.188-0.442-0.293-0.707-0.293h-3v2h2.586l2.5 2.5-2.5 2.5h-2.586v2h3c0.265 0 0.52-0.105 0.707-0.293l2.793-2.793 2.793 2.793c0.188 0.188 0.442 0.293 0.707 0.293h2v2.5l3.5-3.5-3.5-3.5v2.5z"></path>
+          </svg>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+            <path fill="#000000" d="M3 2l10 6-10 6z"></path>
+          </svg>
+        </div>
+
+        <footer>
+          <div id="circle-loader-wrap">
+            <div class="left-wrap">
+              <div class="loader"></div>
+            </div>
+            <div class="right-wrap">
+              <div class="loader"></div>
+            </div>
+          </div>
+          <div class="button">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+              <path fill="#000000" d="M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM8 14.5c-3.59 0-6.5-2.91-6.5-6.5s2.91-6.5 6.5-6.5 6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5zM5 5.5l3.5 2.5-3.5 2.5zM9 5.5l3.5 2.5-3.5 2.5z"></path>
+            </svg>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script>
+      function menu(state) {
+        var menu = document.getElementById('menu-nav');
+        var main = document.getElementById('main-nav');
+        if(state == 'on'){
+          menu.style.left = '0';
+          main.style.left = '105vw';
+        } else {
+          menu.style.left = '-50vw';
+          main.style.left = '0';
+        }
+      }
+
+      document.onreadystatechange = function () {
+        var open = document.getElementById('nav-icon1');
+        var close = document.getElementById('close');
+
+        open.addEventListener('click', function() {
+          menu('on');
+        });
+
+        close.addEventListener('click', function() {
+          menu('off');
+        });
+      }
+    </script>
+  </body>
+</html>
