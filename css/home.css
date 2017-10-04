@@ -1,4 +1,4 @@
-/* line 4, ../sass/home.scss */
+/* line 5, ../sass/home.scss */
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +6,15 @@
   color: #3a3a3a;
 }
 
-/* line 12, ../sass/home.scss */
+/* line 13, ../sass/home.scss */
 button svg path {
   fill: #3a3a3a;
 }
 
-/* line 15, ../sass/home.scss */
+/* line 16, ../sass/home.scss */
 .playlists {
   transition-duration: 0.75s;
-  transition-timing-function: cubic-bezier(0.05, 0.91, 0.43, 0.92);
+  transition-timing-function: ease-in-out;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,13 +23,13 @@ button svg path {
   z-index: 1;
   left: -50vw;
 }
-/* line 26, ../sass/home.scss */
+/* line 27, ../sass/home.scss */
 .playlists .playlists-header {
   height: 50px;
   display: flex;
   flex: 0 1 auto;
 }
-/* line 31, ../sass/home.scss */
+/* line 32, ../sass/home.scss */
 .playlists .playlists-header img {
   margin-left: 15px;
   flex: 0 1 25px;
@@ -37,7 +37,7 @@ button svg path {
   height: 25px;
   align-self: center;
 }
-/* line 39, ../sass/home.scss */
+/* line 40, ../sass/home.scss */
 .playlists .playlists-header h2 {
   text-align: center;
   flex: 1 1 0;
@@ -48,23 +48,23 @@ button svg path {
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 50, ../sass/home.scss */
+/* line 51, ../sass/home.scss */
 .playlists .playlists-header button {
   border: 0;
   background-color: transparent;
 }
-/* line 54, ../sass/home.scss */
+/* line 55, ../sass/home.scss */
 .playlists .playlists-header button:focus {
   outline: none;
 }
-/* line 57, ../sass/home.scss */
+/* line 58, ../sass/home.scss */
 .playlists .playlists-header button svg {
   margin-right: 15px;
   flex: 0 1 22px;
   width: 22px;
   height: auto;
 }
-/* line 66, ../sass/home.scss */
+/* line 67, ../sass/home.scss */
 .playlists .list-container {
   background-color: #3a3a3a;
   display: flex;
@@ -72,16 +72,16 @@ button svg path {
   align-items: center;
   justify-content: center;
 }
-/* line 73, ../sass/home.scss */
+/* line 74, ../sass/home.scss */
 .playlists .list-container ul {
   list-style-type: none;
   text-align: center;
 }
-/* line 77, ../sass/home.scss */
+/* line 78, ../sass/home.scss */
 .playlists .list-container ul li {
   margin: 20px 0;
 }
-/* line 80, ../sass/home.scss */
+/* line 81, ../sass/home.scss */
 .playlists .list-container ul li hr {
   margin: 0 auto;
   width: 50%;
@@ -90,7 +90,7 @@ button svg path {
   background-color: #fff;
   opacity: 0.5;
 }
-/* line 88, ../sass/home.scss */
+/* line 89, ../sass/home.scss */
 .playlists .list-container ul li a {
   font-family: 'Lato';
   font-size: 1.25em;
@@ -100,13 +100,13 @@ button svg path {
 }
 
 /* MENU */
-/* line 103, ../sass/home.scss */
+/* line 104, ../sass/home.scss */
 #nav-icon1 {
   position: relative;
   cursor: pointer;
 }
 
-/* line 108, ../sass/home.scss */
+/* line 109, ../sass/home.scss */
 #nav-icon1 span {
   display: block;
   position: absolute;
@@ -118,30 +118,30 @@ button svg path {
   left: 0;
 }
 
-/* line 119, ../sass/home.scss */
+/* line 120, ../sass/home.scss */
 #nav-icon1 span:nth-child(1) {
   top: 0px;
 }
 
-/* line 123, ../sass/home.scss */
+/* line 124, ../sass/home.scss */
 #nav-icon1 span:nth-child(2) {
   top: 10px;
   width: 80%;
 }
 
-/* line 128, ../sass/home.scss */
+/* line 129, ../sass/home.scss */
 #nav-icon1 span:nth-child(3) {
   top: 20px;
 }
 
 /* END MENU */
-/* line 134, ../sass/home.scss */
+/* line 135, ../sass/home.scss */
 body {
   height: 100%;
   width: 100%;
 }
 
-/* line 139, ../sass/home.scss */
+/* line 140, ../sass/home.scss */
 main {
   background-color: white;
   z-index: 2;
@@ -149,9 +149,9 @@ main {
   height: 100vh;
   left: 0;
   transition-duration: 0.75s;
-  transition-timing-function: cubic-bezier(0.05, 0.91, 0.43, 0.92);
+  transition-timing-function: ease-in-out;
 }
-/* line 148, ../sass/home.scss */
+/* line 149, ../sass/home.scss */
 main header {
   position: sticky;
   width: 100%;
@@ -159,14 +159,14 @@ main header {
   height: 50px;
   box-shadow: 0px 2px 2px 0px #a8a8a8;
 }
-/* line 155, ../sass/home.scss */
+/* line 156, ../sass/home.scss */
 main header img {
   flex: 0 1 25px;
   height: 25px;
   align-self: center;
   margin-right: 15px;
 }
-/* line 162, ../sass/home.scss */
+/* line 163, ../sass/home.scss */
 main header h2 {
   text-align: center;
   flex: 1 1 0;
@@ -177,44 +177,49 @@ main header h2 {
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 173, ../sass/home.scss */
+/* line 174, ../sass/home.scss */
 main header #nav-icon1 {
   height: 22px;
   flex: 0 1 25px;
   align-self: center;
   margin-left: 15px;
 }
-/* line 180, ../sass/home.scss */
+/* line 181, ../sass/home.scss */
 main header span.menu {
   height: 2px;
   background-color: black;
   flex: 0 1 20px;
 }
-/* line 185, ../sass/home.scss */
+/* line 186, ../sass/home.scss */
 main header span.menu::after {
   content: '';
   height: 2px;
   background-color: black;
   flex: 0 1 20px;
 }
-/* line 192, ../sass/home.scss */
+/* line 193, ../sass/home.scss */
 main header span.menu::before {
   content: '';
   height: 2px;
   background-color: black;
   flex: 0 1 20px;
 }
-/* line 201, ../sass/home.scss */
+/* line 202, ../sass/home.scss */
 main section {
-  width: 90%;
-  margin: 1.2em auto;
+  width: 100%;
+  margin: auto;
+  height: calc(100% - 50px);
+  background-color: #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-/* line 205, ../sass/home.scss */
+/* line 211, ../sass/home.scss */
 main section div.img-wrapper {
   width: 100%;
   position: relative;
 }
-/* line 210, ../sass/home.scss */
+/* line 216, ../sass/home.scss */
 main section div.layer {
   position: absolute;
   top: 0;
@@ -224,28 +229,28 @@ main section div.layer {
   background-color: #3a3a3a;
   opacity: 0.75;
 }
-/* line 220, ../sass/home.scss */
+/* line 226, ../sass/home.scss */
 main section img {
   width: 100%;
 }
-/* line 224, ../sass/home.scss */
+/* line 230, ../sass/home.scss */
 main section div.cmds {
   height: 75px;
   background-color: #3a3a3a;
   display: flex;
   justify-content: space-around;
 }
-/* line 230, ../sass/home.scss */
+/* line 236, ../sass/home.scss */
 main section div.cmds svg {
   height: 50%;
   flex: 1 0 0;
   align-self: center;
 }
-/* line 235, ../sass/home.scss */
+/* line 241, ../sass/home.scss */
 main section div.cmds svg path {
   fill: white;
 }
-/* line 241, ../sass/home.scss */
+/* line 247, ../sass/home.scss */
 main section div.titles {
   position: absolute;
   z-index: 3;
@@ -254,7 +259,7 @@ main section div.titles {
   font-size: 1.75em;
   font-family: 'Lato';
 }
-/* line 249, ../sass/home.scss */
+/* line 255, ../sass/home.scss */
 main section div.titles p.title::after {
   content: '';
   background-color: white;
@@ -264,27 +269,80 @@ main section div.titles p.title::after {
   display: block;
   width: 60px;
 }
-/* line 259, ../sass/home.scss */
+/* line 265, ../sass/home.scss */
 main section div.titles p {
   color: white;
 }
 
-/* line 266, ../sass/home.scss */
-footer {
+/* line 272, ../sass/home.scss */
+div.timer {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
 }
-/* line 271, ../sass/home.scss */
-footer div.button {
-  width: 100px;
+/* line 276, ../sass/home.scss */
+div.timer button#next {
+  min-width: 100px;
+  width: 40%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  border: 4px solid white;
+  background-color: #3a3a3a;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  outline: 0;
+  cursor: pointer;
 }
-/* line 274, ../sass/home.scss */
-footer div.button svg path {
-  fill: #3a3a3a;
+/* line 293, ../sass/home.scss */
+div.timer div.album-preview div.titles {
+  vertical-align: super;
+  position: inherit;
+  font-size: 1em;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+/* line 301, ../sass/home.scss */
+div.timer div.album-preview div.titles p.title::after {
+  content: normal;
+}
+/* line 306, ../sass/home.scss */
+div.timer div.album-preview img {
+  height: 50px;
+  width: 50px;
 }
 
-/* line 281, ../sass/home.scss */
+/* line 313, ../sass/home.scss */
+div.progress-wrapper {
+  height: 8px;
+  margin: 0 auto;
+  background-color: #7a7a7a;
+  display: block;
+}
+/* line 318, ../sass/home.scss */
+div.progress-wrapper div.progress {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+}
+
+/* line 325, ../sass/home.scss */
+div.sound-wrapper {
+  height: 8px;
+  margin: 0 auto;
+  background-color: #7a7a7a;
+  display: block;
+}
+/* line 330, ../sass/home.scss */
+div.sound-wrapper div.sound {
+  width: 56%;
+  height: 100%;
+  background-color: white;
+}
+
+/* line 337, ../sass/home.scss */
 #circle-loader-wrap {
   overflow: hidden;
   position: relative;
@@ -294,7 +352,7 @@ footer div.button svg path {
   background-color: #3a3a3a;
   border-radius: 200px;
 }
-/* line 289, ../sass/home.scss */
+/* line 345, ../sass/home.scss */
 #circle-loader-wrap:after {
   content: '2:43';
   text-align: center;
@@ -311,14 +369,14 @@ footer div.button svg path {
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-/* line 307, ../sass/home.scss */
+/* line 363, ../sass/home.scss */
 #circle-loader-wrap div {
   overflow: hidden;
   position: absolute;
   width: 50%;
   height: 100%;
 }
-/* line 313, ../sass/home.scss */
+/* line 369, ../sass/home.scss */
 #circle-loader-wrap .loader {
   position: absolute;
   left: 100%;
@@ -328,11 +386,11 @@ footer div.button svg path {
   border-radius: 1000px;
   background-color: white;
 }
-/* line 323, ../sass/home.scss */
+/* line 379, ../sass/home.scss */
 #circle-loader-wrap .left-wrap {
   left: 0;
 }
-/* line 326, ../sass/home.scss */
+/* line 382, ../sass/home.scss */
 #circle-loader-wrap .left-wrap .loader {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -341,11 +399,11 @@ footer div.button svg path {
   animation: loading-left 20s infinite linear;
   -webkit-animation: loading-left 20s infinite linear;
 }
-/* line 335, ../sass/home.scss */
+/* line 391, ../sass/home.scss */
 #circle-loader-wrap .right-wrap {
   left: 50%;
 }
-/* line 337, ../sass/home.scss */
+/* line 393, ../sass/home.scss */
 #circle-loader-wrap .right-wrap .loader {
   left: -100%;
   border-bottom-right-radius: 0;
