@@ -240,6 +240,10 @@ main {
         flex: 1 0 0;
         align-self: center;
 
+        &.active path{
+          fill: $light;
+        }
+
         path {
           fill: white;
         }
