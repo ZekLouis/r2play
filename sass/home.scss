@@ -9,10 +9,6 @@ $red: #C32C32;
   color: $main-color;
 }
 
-
-button svg path {
-  fill: $main-color;
-}
 .playlists {
   transition-duration: 0.75s;
   transition-timing-function: ease-in-out;
@@ -275,7 +271,6 @@ div.timer {
 
   button#next {
     min-width: 100px;
-    width: 40%;
     height: 50px;
     margin: 0 auto;
     text-align: center;
@@ -287,6 +282,11 @@ div.timer {
     text-transform: uppercase;
     outline: 0;
     cursor: pointer;
+
+    svg {
+      height: 100%;
+      width:100%;
+    }
   }
 
   div.album-preview {

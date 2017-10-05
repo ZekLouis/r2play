@@ -6,12 +6,7 @@
   color: #3a3a3a;
 }
 
-/* line 13, ../sass/home.scss */
-button svg path {
-  fill: #3a3a3a;
-}
-
-/* line 16, ../sass/home.scss */
+/* line 12, ../sass/home.scss */
 .playlists {
   transition-duration: 0.75s;
   transition-timing-function: ease-in-out;
@@ -23,13 +18,13 @@ button svg path {
   z-index: 1;
   left: -50vw;
 }
-/* line 27, ../sass/home.scss */
+/* line 23, ../sass/home.scss */
 .playlists .playlists-header {
   height: 50px;
   display: flex;
   flex: 0 1 auto;
 }
-/* line 32, ../sass/home.scss */
+/* line 28, ../sass/home.scss */
 .playlists .playlists-header img {
   margin-left: 15px;
   flex: 0 1 25px;
@@ -37,7 +32,7 @@ button svg path {
   height: 25px;
   align-self: center;
 }
-/* line 40, ../sass/home.scss */
+/* line 36, ../sass/home.scss */
 .playlists .playlists-header h2 {
   text-align: center;
   flex: 1 1 0;
@@ -48,23 +43,23 @@ button svg path {
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 51, ../sass/home.scss */
+/* line 47, ../sass/home.scss */
 .playlists .playlists-header button {
   border: 0;
   background-color: transparent;
 }
-/* line 55, ../sass/home.scss */
+/* line 51, ../sass/home.scss */
 .playlists .playlists-header button:focus {
   outline: none;
 }
-/* line 58, ../sass/home.scss */
+/* line 54, ../sass/home.scss */
 .playlists .playlists-header button svg {
   margin-right: 15px;
   flex: 0 1 22px;
   width: 22px;
   height: auto;
 }
-/* line 67, ../sass/home.scss */
+/* line 63, ../sass/home.scss */
 .playlists .list-container {
   background-color: #3a3a3a;
   display: flex;
@@ -72,16 +67,16 @@ button svg path {
   align-items: center;
   justify-content: center;
 }
-/* line 74, ../sass/home.scss */
+/* line 70, ../sass/home.scss */
 .playlists .list-container ul {
   list-style-type: none;
   text-align: center;
 }
-/* line 78, ../sass/home.scss */
+/* line 74, ../sass/home.scss */
 .playlists .list-container ul li {
   margin: 20px 0;
 }
-/* line 81, ../sass/home.scss */
+/* line 77, ../sass/home.scss */
 .playlists .list-container ul li hr {
   margin: 0 auto;
   width: 50%;
@@ -90,7 +85,7 @@ button svg path {
   background-color: #fff;
   opacity: 0.5;
 }
-/* line 89, ../sass/home.scss */
+/* line 85, ../sass/home.scss */
 .playlists .list-container ul li a {
   font-family: 'Lato';
   font-size: 1.25em;
@@ -100,13 +95,13 @@ button svg path {
 }
 
 /* MENU */
-/* line 104, ../sass/home.scss */
+/* line 100, ../sass/home.scss */
 #nav-icon1 {
   position: relative;
   cursor: pointer;
 }
 
-/* line 109, ../sass/home.scss */
+/* line 105, ../sass/home.scss */
 #nav-icon1 span {
   display: block;
   position: absolute;
@@ -118,30 +113,30 @@ button svg path {
   left: 0;
 }
 
-/* line 120, ../sass/home.scss */
+/* line 116, ../sass/home.scss */
 #nav-icon1 span:nth-child(1) {
   top: 0px;
 }
 
-/* line 124, ../sass/home.scss */
+/* line 120, ../sass/home.scss */
 #nav-icon1 span:nth-child(2) {
   top: 10px;
   width: 80%;
 }
 
-/* line 129, ../sass/home.scss */
+/* line 125, ../sass/home.scss */
 #nav-icon1 span:nth-child(3) {
   top: 20px;
 }
 
 /* END MENU */
-/* line 135, ../sass/home.scss */
+/* line 131, ../sass/home.scss */
 body {
   height: 100%;
   width: 100%;
 }
 
-/* line 140, ../sass/home.scss */
+/* line 136, ../sass/home.scss */
 main {
   background-color: white;
   z-index: 2;
@@ -151,7 +146,7 @@ main {
   transition-duration: 0.75s;
   transition-timing-function: ease-in-out;
 }
-/* line 149, ../sass/home.scss */
+/* line 145, ../sass/home.scss */
 main header {
   position: sticky;
   width: 100%;
@@ -159,14 +154,14 @@ main header {
   height: 50px;
   box-shadow: 0px 2px 2px 0px #a8a8a8;
 }
-/* line 156, ../sass/home.scss */
+/* line 152, ../sass/home.scss */
 main header img {
   flex: 0 1 25px;
   height: 25px;
   align-self: center;
   margin-right: 15px;
 }
-/* line 163, ../sass/home.scss */
+/* line 159, ../sass/home.scss */
 main header h2 {
   text-align: center;
   flex: 1 1 0;
@@ -177,34 +172,34 @@ main header h2 {
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 174, ../sass/home.scss */
+/* line 170, ../sass/home.scss */
 main header #nav-icon1 {
   height: 22px;
   flex: 0 1 25px;
   align-self: center;
   margin-left: 15px;
 }
-/* line 181, ../sass/home.scss */
+/* line 177, ../sass/home.scss */
 main header span.menu {
   height: 2px;
   background-color: black;
   flex: 0 1 20px;
 }
-/* line 186, ../sass/home.scss */
+/* line 182, ../sass/home.scss */
 main header span.menu::after {
   content: '';
   height: 2px;
   background-color: black;
   flex: 0 1 20px;
 }
-/* line 193, ../sass/home.scss */
+/* line 189, ../sass/home.scss */
 main header span.menu::before {
   content: '';
   height: 2px;
   background-color: black;
   flex: 0 1 20px;
 }
-/* line 202, ../sass/home.scss */
+/* line 198, ../sass/home.scss */
 main section {
   width: 100%;
   margin: auto;
@@ -214,12 +209,12 @@ main section {
   flex-direction: column;
   justify-content: space-around;
 }
-/* line 211, ../sass/home.scss */
+/* line 207, ../sass/home.scss */
 main section div.img-wrapper {
   width: 100%;
   position: relative;
 }
-/* line 216, ../sass/home.scss */
+/* line 212, ../sass/home.scss */
 main section div.layer {
   position: absolute;
   top: 0;
@@ -229,28 +224,28 @@ main section div.layer {
   background-color: #3a3a3a;
   opacity: 0.75;
 }
-/* line 226, ../sass/home.scss */
+/* line 222, ../sass/home.scss */
 main section img {
   width: 100%;
 }
-/* line 230, ../sass/home.scss */
+/* line 226, ../sass/home.scss */
 main section div.cmds {
   height: 75px;
   background-color: #3a3a3a;
   display: flex;
   justify-content: space-around;
 }
-/* line 236, ../sass/home.scss */
+/* line 232, ../sass/home.scss */
 main section div.cmds svg {
   height: 50%;
   flex: 1 0 0;
   align-self: center;
 }
-/* line 241, ../sass/home.scss */
+/* line 237, ../sass/home.scss */
 main section div.cmds svg path {
   fill: white;
 }
-/* line 247, ../sass/home.scss */
+/* line 243, ../sass/home.scss */
 main section div.titles {
   position: absolute;
   z-index: 3;
@@ -259,7 +254,7 @@ main section div.titles {
   font-size: 1.75em;
   font-family: 'Lato';
 }
-/* line 255, ../sass/home.scss */
+/* line 251, ../sass/home.scss */
 main section div.titles p.title::after {
   content: '';
   background-color: white;
@@ -269,20 +264,19 @@ main section div.titles p.title::after {
   display: block;
   width: 60px;
 }
-/* line 265, ../sass/home.scss */
+/* line 261, ../sass/home.scss */
 main section div.titles p {
   color: white;
 }
 
-/* line 272, ../sass/home.scss */
+/* line 268, ../sass/home.scss */
 div.timer {
   display: flex;
   justify-content: space-around;
 }
-/* line 276, ../sass/home.scss */
+/* line 272, ../sass/home.scss */
 div.timer button#next {
   min-width: 100px;
-  width: 40%;
   height: 50px;
   margin: 0 auto;
   text-align: center;
@@ -294,6 +288,11 @@ div.timer button#next {
   text-transform: uppercase;
   outline: 0;
   cursor: pointer;
+}
+/* line 286, ../sass/home.scss */
+div.timer button#next svg {
+  height: 100%;
+  width: 100%;
 }
 /* line 293, ../sass/home.scss */
 div.timer div.album-preview div.titles {
