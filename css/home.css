@@ -266,7 +266,7 @@ main section div.titles {
   font-size: 1.75em;
   font-family: 'Lato';
 }
-/* line 262, ../sass/home.scss */
+/* line 263, ../sass/home.scss */
 main section div.titles p.title::after {
   content: '';
   background-color: white;
@@ -276,17 +276,17 @@ main section div.titles p.title::after {
   display: block;
   width: 60px;
 }
-/* line 272, ../sass/home.scss */
+/* line 273, ../sass/home.scss */
 main section div.titles p {
   color: white;
 }
 
-/* line 279, ../sass/home.scss */
+/* line 280, ../sass/home.scss */
 div.timer {
   display: flex;
   justify-content: space-around;
 }
-/* line 283, ../sass/home.scss */
+/* line 284, ../sass/home.scss */
 div.timer button#next {
   position: relative;
   min-width: 100px;
@@ -310,7 +310,7 @@ div.timer button#next {
   background: linear-gradient(to left, white, #3a3a3a);
   /*Standard*/
 }
-/* line 302, ../sass/home.scss */
+/* line 303, ../sass/home.scss */
 div.timer button#next::after {
   content: '';
   position: absolute;
@@ -322,7 +322,7 @@ div.timer button#next::after {
   border-width: 25px;
   border-color: transparent transparent transparent white;
 }
-/* line 316, ../sass/home.scss */
+/* line 317, ../sass/home.scss */
 div.timer div.album-preview div.titles {
   vertical-align: super;
   position: inherit;
@@ -330,18 +330,27 @@ div.timer div.album-preview div.titles {
   display: inline-block;
   text-align: right;
   margin-right: 10px;
+  max-width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-/* line 324, ../sass/home.scss */
+/* line 329, ../sass/home.scss */
+div.timer div.album-preview div.titles p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* line 334, ../sass/home.scss */
 div.timer div.album-preview div.titles p.title::after {
   content: normal;
 }
-/* line 329, ../sass/home.scss */
+/* line 339, ../sass/home.scss */
 div.timer div.album-preview img {
   height: 50px;
   width: 50px;
 }
 
-/* line 336, ../sass/home.scss */
+/* line 346, ../sass/home.scss */
 div.progress-wrapper {
   height: 8px;
   margin: 0 auto;
@@ -349,7 +358,7 @@ div.progress-wrapper {
   display: block;
   position: relative;
 }
-/* line 343, ../sass/home.scss */
+/* line 353, ../sass/home.scss */
 div.progress-wrapper::before, div.progress-wrapper::after {
   position: absolute;
   top: -25px;
@@ -360,17 +369,17 @@ div.progress-wrapper::before, div.progress-wrapper::after {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
-/* line 354, ../sass/home.scss */
+/* line 364, ../sass/home.scss */
 div.progress-wrapper::before {
   content: attr(data-time);
 }
-/* line 358, ../sass/home.scss */
+/* line 368, ../sass/home.scss */
 div.progress-wrapper::after {
   content: attr(data-total);
   left: inherit;
   right: 5px;
 }
-/* line 364, ../sass/home.scss */
+/* line 374, ../sass/home.scss */
 div.progress-wrapper div.progress {
   width: 0%;
   height: 100%;
@@ -378,19 +387,19 @@ div.progress-wrapper div.progress {
   transition: width 0.1s ease-in;
 }
 
-/* line 372, ../sass/home.scss */
+/* line 382, ../sass/home.scss */
 div.bottom:hover div.progress-wrapper::before, div.bottom:hover div.progress-wrapper::after {
   opacity: 1;
 }
 
-/* line 376, ../sass/home.scss */
+/* line 386, ../sass/home.scss */
 div.sound-wrapper {
   height: 8px;
   margin: 0 auto;
   background-color: #7a7a7a;
   display: block;
 }
-/* line 381, ../sass/home.scss */
+/* line 391, ../sass/home.scss */
 div.sound-wrapper div.sound {
   width: 56%;
   height: 100%;

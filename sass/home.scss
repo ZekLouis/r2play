@@ -259,6 +259,7 @@ main {
       font-size: 1.75em;
       font-family: 'Lato';
 
+
       p.title::after {
         content: '';
         background-color: white;
@@ -320,6 +321,15 @@ div.timer {
       display: inline-block;
       text-align: right;
       margin-right: 10px;
+      max-width: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
 
       p.title::after {
         content: normal;
