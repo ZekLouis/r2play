@@ -22,17 +22,17 @@
       </header>
       <section class="list-container">
         <ul>
-          <li><a href="#">Good morning</a></li>
+          <li><a class="playlist-link" data-playlist="0" href="#">Good morning</a></li>
           <li><hr></li>
-          <li><a href="#">Good afternoon</a></li>
+          <li><a class="playlist-link" data-playlist="1" href="#">Good afternoon</a></li>
           <li><hr></li>
-          <li><a href="#">Good night</a></li>
+          <li><a class="playlist-link" data-playlist="2" href="#">Good night</a></li>
           <li><hr></li>
-          <li><a href="#">Sport motivation</a></li>
+          <li><a class="playlist-link" data-playlist="3" href="#">Sport motivation</a></li>
           <li><hr></li>
-          <li><a href="#">Coffee break</a></li>
+          <li><a class="playlist-link" data-playlist="4" href="#">Coffee break</a></li>
           <li><hr></li>
-          <li><a href="#">Morning routine</a></li>
+          <li><a class="playlist-link" data-playlist="5" href="#">Morning routine</a></li>
         </ul>
       </section>
     </nav>
@@ -55,7 +55,7 @@
             <p class="title">All Stars</p>
             <p class="sub-title">Martin Solveig</p>
           </div>
-          <img src="./img/cover.jpg" alt="Album Image">
+          <img class="cover" src="./img/cover.jpg" alt="Album Image">
         </div>
 
         <div class="middle">
@@ -72,7 +72,7 @@
         </div>
 
         <div class="bottom">
-          <div class="progress-wrapper">
+          <div class="progress-wrapper" data-time="0:00">
             <div class="progress"></div>
           </div>
 
@@ -80,13 +80,13 @@
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
               <path fill="#000000" d="M6 1h10v2h-10v-2zM6 7h10v2h-10v-2zM6 13h10v2h-10v-2zM0 2c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2s-2-0.895-2-2zM0 8c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2s-2-0.895-2-2zM0 14c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2s-2-0.895-2-2z"></path>
             </svg>
-            <svg class="active" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+            <svg class="active repeat" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
               <path fill="#000000" d="M2 5h10v3l4-4-4-4v3h-12v6h2zM14 11h-10v-3l-4 4 4 4v-3h12v-6h-2z"></path>
             </svg>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+            <svg class="random" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
               <path fill="#000000" d="M12 11h-1.586l-2.5-2.5 2.5-2.5h1.586v2.5l3.5-3.5-3.5-3.5v2.5h-2c-0.265 0-0.52 0.105-0.707 0.293l-2.793 2.793-2.793-2.793c-0.188-0.188-0.442-0.293-0.707-0.293h-3v2h2.586l2.5 2.5-2.5 2.5h-2.586v2h3c0.265 0 0.52-0.105 0.707-0.293l2.793-2.793 2.793 2.793c0.188 0.188 0.442 0.293 0.707 0.293h2v2.5l3.5-3.5-3.5-3.5v2.5z"></path>
             </svg>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+            <svg class="play" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
               <path fill="#000000" d="M3 2l10 6-10 6z"></path>
             </svg>
           </div>
@@ -96,6 +96,9 @@
           </div>
         </div>
       </section>
+      <audio id="audioPlayer">
+        <source class="player-source">
+      </audio>
     </main>
 
     <script>
@@ -124,5 +127,7 @@
         });
       }
     </script>
+    <script src="assets/playlists/playlists.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

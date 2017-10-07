@@ -361,7 +361,7 @@ div.progress-wrapper::before, div.progress-wrapper::after {
 }
 /* line 353, ../sass/home.scss */
 div.progress-wrapper::before {
-  content: '2:53';
+  content: attr(data-time);
 }
 /* line 357, ../sass/home.scss */
 div.progress-wrapper::after {
@@ -371,24 +371,25 @@ div.progress-wrapper::after {
 }
 /* line 363, ../sass/home.scss */
 div.progress-wrapper div.progress {
-  width: 70%;
+  width: 0%;
   height: 100%;
   background-color: white;
+  transition: width 0.1s ease-in;
 }
 
-/* line 370, ../sass/home.scss */
+/* line 371, ../sass/home.scss */
 div.bottom:hover div.progress-wrapper::before, div.bottom:hover div.progress-wrapper::after {
   opacity: 1;
 }
 
-/* line 374, ../sass/home.scss */
+/* line 375, ../sass/home.scss */
 div.sound-wrapper {
   height: 8px;
   margin: 0 auto;
   background-color: #7a7a7a;
   display: block;
 }
-/* line 379, ../sass/home.scss */
+/* line 380, ../sass/home.scss */
 div.sound-wrapper div.sound {
   width: 56%;
   height: 100%;
