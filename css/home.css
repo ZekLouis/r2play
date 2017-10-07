@@ -365,7 +365,7 @@ div.progress-wrapper::before {
 }
 /* line 357, ../sass/home.scss */
 div.progress-wrapper::after {
-  content: '3:13';
+  content: attr(data-total);
   left: inherit;
   right: 5px;
 }

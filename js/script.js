@@ -19,7 +19,6 @@ window.onload = function() {
       currentMusic = 0;
       isPlaying = true;
       setPlaylistParams(this.dataset.playlist);
-
     });
   }
 
@@ -88,6 +87,10 @@ window.onload = function() {
       setMusic(currentPlaylist.music[currentMusic]);
     }, 2000)
   });
+
+  player.addEventListener("durationchange", function(){
+    document.querySelector('.progress-wrapper').setAttribute('data-total', getTime(Math.round(player.duration)));
+  })
 
   setInterval(function(){
     if(isPlaying) {

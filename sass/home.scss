@@ -355,7 +355,7 @@ div.progress-wrapper {
   }
 
   &::after {
-    content:'3:13';
+    content:attr(data-total);
     left: inherit;
     right: 5px;
   }
