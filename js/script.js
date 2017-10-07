@@ -46,12 +46,13 @@ window.onload = function() {
         currentMusic = generateRandom(currentMusic, (currentPlaylist.music.length-1))
       }
     }
-    setMusic(currentPlaylist.music[currentMusic]);
+    setMusic(currentPlaylist.music[currentMusic],currentPlaylist,currentMusic);
   });
 
   // Repeat button action : replays the current song at the end
   document.querySelector('.repeat').addEventListener('click', function() {
     isEnabledRandom = false;
+    document.querySelector('div.album-preview').style.display = "block";
     document.querySelector('.random').classList.remove('active');
     if(isEnabledRepeat) {
       document.querySelector('.repeat').classList.remove('active');
@@ -121,7 +122,7 @@ window.onload = function() {
           currentMusic = generateRandom(currentMusic, (currentPlaylist.music.length-1))
         }
       }
-      setMusic(currentPlaylist.music[currentMusic]);
+      setMusic(currentPlaylist.music[currentMusic],currentPlaylist,currentMusic);
     }, 2000)
   });
 
@@ -148,10 +149,10 @@ window.onload = function() {
     currentPlaylistPos = parseInt(current);
     currentPlaylist = playlists[currentPlaylistPos];
 
-    setMusic(currentPlaylist.music[currentMusic]);
+    setMusic(currentPlaylist.music[currentMusic],currentPlaylist,currentMusic);
   }
 
-  function setMusic(music) {
+  function setMusic(music,currentPlaylist,currentMusic) {
       isPlaying = true;
       document.querySelector('.play').style.display = "none";
       document.querySelector('.pause').style.display = "block";
@@ -159,6 +160,20 @@ window.onload = function() {
       var title = document.querySelector('.title');
       var artist = document.querySelector('.sub-title');
 
+      var preview_cover = document.querySelector('div.album-preview img');
+      var preview_title = document.querySelector('div.album-preview .title');
+      var preview_artist = document.querySelector('div.album-preview .sub-title');
+      var preview = null;
+
+      if(typeof currentPlaylist.music[currentMusic+1] !== "undefined"){
+        preview = currentPlaylist.music[currentMusic+1];
+      } else {
+        preview = currentPlaylist.music[0];
+      }
+
+      preview_cover.src = preview.img;
+      preview_title.innerHTML = preview.titre;
+      preview_artist.innerHTML = preview.artiste;
       // Sets current display to the first song
       cover.src = music.img;
       title.innerHTML = music.titre;
