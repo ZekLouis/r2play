@@ -50,21 +50,22 @@ html, body {
 }
 /* line 51, ../sass/home.scss */
 .playlists .playlists-header button {
+  cursor: pointer;
   border: 0;
   background-color: transparent;
 }
-/* line 55, ../sass/home.scss */
+/* line 56, ../sass/home.scss */
 .playlists .playlists-header button:focus {
   outline: none;
 }
-/* line 58, ../sass/home.scss */
+/* line 59, ../sass/home.scss */
 .playlists .playlists-header button svg {
   margin-right: 15px;
   flex: 0 1 22px;
   width: 22px;
   height: auto;
 }
-/* line 67, ../sass/home.scss */
+/* line 68, ../sass/home.scss */
 .playlists .list-container {
   background-color: #3a3a3a;
   display: flex;
@@ -72,16 +73,16 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-/* line 74, ../sass/home.scss */
+/* line 75, ../sass/home.scss */
 .playlists .list-container ul {
   list-style-type: none;
   text-align: center;
 }
-/* line 78, ../sass/home.scss */
+/* line 79, ../sass/home.scss */
 .playlists .list-container ul li {
   margin: 20px 0;
 }
-/* line 81, ../sass/home.scss */
+/* line 82, ../sass/home.scss */
 .playlists .list-container ul li hr {
   margin: 0 auto;
   width: 50%;
@@ -90,7 +91,7 @@ html, body {
   background-color: #fff;
   opacity: 0.5;
 }
-/* line 89, ../sass/home.scss */
+/* line 90, ../sass/home.scss */
 .playlists .list-container ul li a {
   font-family: 'Lato';
   font-size: 1.25em;
@@ -100,13 +101,13 @@ html, body {
 }
 
 /* MENU */
-/* line 104, ../sass/home.scss */
+/* line 105, ../sass/home.scss */
 #nav-icon1 {
   position: relative;
   cursor: pointer;
 }
 
-/* line 109, ../sass/home.scss */
+/* line 110, ../sass/home.scss */
 #nav-icon1 span {
   display: block;
   position: absolute;
@@ -118,30 +119,30 @@ html, body {
   left: 0;
 }
 
-/* line 120, ../sass/home.scss */
+/* line 121, ../sass/home.scss */
 #nav-icon1 span:nth-child(1) {
   top: 0px;
 }
 
-/* line 124, ../sass/home.scss */
+/* line 125, ../sass/home.scss */
 #nav-icon1 span:nth-child(2) {
   top: 10px;
   width: 80%;
 }
 
-/* line 129, ../sass/home.scss */
+/* line 130, ../sass/home.scss */
 #nav-icon1 span:nth-child(3) {
   top: 20px;
 }
 
 /* END MENU */
-/* line 135, ../sass/home.scss */
+/* line 136, ../sass/home.scss */
 body {
   height: 100%;
   width: 100%;
 }
 
-/* line 140, ../sass/home.scss */
+/* line 141, ../sass/home.scss */
 main {
   background-color: white;
   z-index: 2;
@@ -151,7 +152,7 @@ main {
   transition-duration: 0.75s;
   transition-timing-function: ease-in-out;
 }
-/* line 149, ../sass/home.scss */
+/* line 150, ../sass/home.scss */
 main header {
   position: sticky;
   width: 100%;
@@ -161,14 +162,14 @@ main header {
   z-index: 5;
   background-color: white;
 }
-/* line 158, ../sass/home.scss */
+/* line 159, ../sass/home.scss */
 main header img {
   flex: 0 1 25px;
   height: 25px;
   align-self: center;
   margin-right: 15px;
 }
-/* line 165, ../sass/home.scss */
+/* line 166, ../sass/home.scss */
 main header h2 {
   text-align: center;
   flex: 1 1 0;
@@ -179,34 +180,34 @@ main header h2 {
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 176, ../sass/home.scss */
+/* line 177, ../sass/home.scss */
 main header #nav-icon1 {
   height: 22px;
   flex: 0 1 25px;
   align-self: center;
   margin-left: 15px;
 }
-/* line 183, ../sass/home.scss */
+/* line 184, ../sass/home.scss */
 main header span.menu {
   height: 2px;
   background-color: black;
   flex: 0 1 20px;
 }
-/* line 188, ../sass/home.scss */
+/* line 189, ../sass/home.scss */
 main header span.menu::after {
   content: '';
   height: 2px;
   background-color: black;
   flex: 0 1 20px;
 }
-/* line 195, ../sass/home.scss */
+/* line 196, ../sass/home.scss */
 main header span.menu::before {
   content: '';
   height: 2px;
   background-color: black;
   flex: 0 1 20px;
 }
-/* line 204, ../sass/home.scss */
+/* line 205, ../sass/home.scss */
 main section {
   width: 100%;
   margin: auto;
@@ -216,12 +217,12 @@ main section {
   flex-direction: column;
   justify-content: space-around;
 }
-/* line 213, ../sass/home.scss */
+/* line 214, ../sass/home.scss */
 main section div.img-wrapper {
   width: 100%;
   position: relative;
 }
-/* line 218, ../sass/home.scss */
+/* line 219, ../sass/home.scss */
 main section div.layer {
   position: absolute;
   top: 0;
@@ -231,32 +232,32 @@ main section div.layer {
   background-color: #3a3a3a;
   opacity: 0.75;
 }
-/* line 228, ../sass/home.scss */
+/* line 229, ../sass/home.scss */
 main section img {
   width: 100%;
 }
-/* line 232, ../sass/home.scss */
+/* line 233, ../sass/home.scss */
 main section div.cmds {
   height: 75px;
   background-color: #3a3a3a;
   display: flex;
   justify-content: space-around;
 }
-/* line 238, ../sass/home.scss */
+/* line 239, ../sass/home.scss */
 main section div.cmds svg {
   height: 50%;
   flex: 1 0 0;
   align-self: center;
 }
-/* line 243, ../sass/home.scss */
+/* line 244, ../sass/home.scss */
 main section div.cmds svg.active path {
   fill: #7a7a7a;
 }
-/* line 247, ../sass/home.scss */
+/* line 248, ../sass/home.scss */
 main section div.cmds svg path {
   fill: white;
 }
-/* line 253, ../sass/home.scss */
+/* line 254, ../sass/home.scss */
 main section div.titles {
   position: absolute;
   z-index: 3;
@@ -265,7 +266,7 @@ main section div.titles {
   font-size: 1.75em;
   font-family: 'Lato';
 }
-/* line 261, ../sass/home.scss */
+/* line 262, ../sass/home.scss */
 main section div.titles p.title::after {
   content: '';
   background-color: white;
@@ -275,17 +276,17 @@ main section div.titles p.title::after {
   display: block;
   width: 60px;
 }
-/* line 271, ../sass/home.scss */
+/* line 272, ../sass/home.scss */
 main section div.titles p {
   color: white;
 }
 
-/* line 278, ../sass/home.scss */
+/* line 279, ../sass/home.scss */
 div.timer {
   display: flex;
   justify-content: space-around;
 }
-/* line 282, ../sass/home.scss */
+/* line 283, ../sass/home.scss */
 div.timer button#next {
   position: relative;
   min-width: 100px;
@@ -309,7 +310,7 @@ div.timer button#next {
   background: linear-gradient(to left, white, #3a3a3a);
   /*Standard*/
 }
-/* line 301, ../sass/home.scss */
+/* line 302, ../sass/home.scss */
 div.timer button#next::after {
   content: '';
   position: absolute;
@@ -321,7 +322,7 @@ div.timer button#next::after {
   border-width: 25px;
   border-color: transparent transparent transparent white;
 }
-/* line 315, ../sass/home.scss */
+/* line 316, ../sass/home.scss */
 div.timer div.album-preview div.titles {
   vertical-align: super;
   position: inherit;
@@ -330,17 +331,17 @@ div.timer div.album-preview div.titles {
   text-align: right;
   margin-right: 10px;
 }
-/* line 323, ../sass/home.scss */
+/* line 324, ../sass/home.scss */
 div.timer div.album-preview div.titles p.title::after {
   content: normal;
 }
-/* line 328, ../sass/home.scss */
+/* line 329, ../sass/home.scss */
 div.timer div.album-preview img {
   height: 50px;
   width: 50px;
 }
 
-/* line 335, ../sass/home.scss */
+/* line 336, ../sass/home.scss */
 div.progress-wrapper {
   height: 8px;
   margin: 0 auto;
@@ -348,7 +349,7 @@ div.progress-wrapper {
   display: block;
   position: relative;
 }
-/* line 342, ../sass/home.scss */
+/* line 343, ../sass/home.scss */
 div.progress-wrapper::before, div.progress-wrapper::after {
   position: absolute;
   top: -25px;
@@ -359,17 +360,17 @@ div.progress-wrapper::before, div.progress-wrapper::after {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
-/* line 353, ../sass/home.scss */
+/* line 354, ../sass/home.scss */
 div.progress-wrapper::before {
   content: attr(data-time);
 }
-/* line 357, ../sass/home.scss */
+/* line 358, ../sass/home.scss */
 div.progress-wrapper::after {
   content: attr(data-total);
   left: inherit;
   right: 5px;
 }
-/* line 363, ../sass/home.scss */
+/* line 364, ../sass/home.scss */
 div.progress-wrapper div.progress {
   width: 0%;
   height: 100%;
@@ -377,19 +378,19 @@ div.progress-wrapper div.progress {
   transition: width 0.1s ease-in;
 }
 
-/* line 371, ../sass/home.scss */
+/* line 372, ../sass/home.scss */
 div.bottom:hover div.progress-wrapper::before, div.bottom:hover div.progress-wrapper::after {
   opacity: 1;
 }
 
-/* line 375, ../sass/home.scss */
+/* line 376, ../sass/home.scss */
 div.sound-wrapper {
   height: 8px;
   margin: 0 auto;
   background-color: #7a7a7a;
   display: block;
 }
-/* line 380, ../sass/home.scss */
+/* line 381, ../sass/home.scss */
 div.sound-wrapper div.sound {
   width: 56%;
   height: 100%;

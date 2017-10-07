@@ -8,13 +8,13 @@ window.onload = function() {
   var isEnabledRepeat = false;
   var isEnabledRandom = false;
   var isPlaying = false;
-  var pausePath = "M2 2h5v12h-5zM9 2h5v12h-5z";
-  var playPath = "M3 2l10 6-10 6z";
+  var red = "#e74c3c";
 
   // initialisation
   currentMusic = 0;
   currentPlaylistPos = 0;
   setPlaylistParams(0);
+  playlistsButtons[currentPlaylistPos].style.color = red;
   isPlaying = true;
 
   // Adds eventlisteners to playlists buttons
@@ -22,7 +22,7 @@ window.onload = function() {
   for (i = 0; i < playlistsButtons.length; i++) {
     playlistsButtons[i].addEventListener('click', function() {
       playlistsButtons[currentPlaylistPos].style.color = "#FFF";
-      this.style.color = "red";
+      this.style.color = red;
       menu('off');
       currentPlaylistPos = this.dataset.playlist;
       currentMusic = 0;
@@ -33,6 +33,8 @@ window.onload = function() {
 
   // Next button action : changes the current music
   document.querySelector("#next").addEventListener('click', function() {
+    document.querySelector('.play').style.display = "none";
+    document.querySelector('.pause').style.display = "block";
     if(!isEnabledRepeat && !isEnabledRandom) {
       if(currentMusic < currentPlaylist.music.length-1) {
         currentMusic++;
@@ -66,9 +68,11 @@ window.onload = function() {
     document.querySelector('.repeat').classList.remove('active');
     if(isEnabledRandom) {
       document.querySelector('.random').classList.remove('active');
+      document.querySelector('div.album-preview').style.display = "block";
       isEnabledRandom = false;
     } else {
       document.querySelector('.random').classList.add('active');
+      document.querySelector('div.album-preview').style.display = "none";
       isEnabledRandom = true;
     }
   });
@@ -76,14 +80,30 @@ window.onload = function() {
   // Play / Pause button
   document.querySelector('.play').addEventListener('click', function() {
     if(!isPlaying) {
-      document.querySelector('.play path').d = pausePath;
       isPlaying = true;
+      document.querySelector('.play').style.display = "none";
+      document.querySelector('.pause').style.display = "block";
       player.play();
     } else {
-      document.querySelector('.play path').d = playPath;
       isPlaying = false;
+      document.querySelector('.pause').style.display = "none";
+      document.querySelector('.play').style.display = "block";
       player.pause();
     }
+  });
+
+  document.querySelector('.pause').addEventListener('click', function() {
+      if(!isPlaying) {
+          isPlaying = true;
+          document.querySelector('.play').style.display = "none";
+          document.querySelector('.pause').style.display = "block";
+          player.play();
+      } else {
+          document.querySelector('.pause').style.display = "none";
+          document.querySelector('.play').style.display = "block";
+          isPlaying = false;
+          player.pause();
+      }
   });
 
   // Detects the end of the song
@@ -117,7 +137,7 @@ window.onload = function() {
 
   setInterval(function() {
     document.querySelector('.progress').style.width = (player.currentTime / player.duration * 100) + "%"
-  }, 100);
+  }, 1000);
 
 
 
@@ -132,6 +152,9 @@ window.onload = function() {
   }
 
   function setMusic(music) {
+      isPlaying = true;
+      document.querySelector('.play').style.display = "none";
+      document.querySelector('.pause').style.display = "block";
       var cover = document.querySelector('.cover');
       var title = document.querySelector('.title');
       var artist = document.querySelector('.sub-title');
