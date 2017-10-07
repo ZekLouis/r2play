@@ -22,8 +22,8 @@
       <file leaf-file-name="home.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="323" column="9" lean-forward="false" selection-start-line="323" selection-start-column="9" selection-end-line="323" selection-end-column="9" />
+            <state relative-caret-position="351">
+              <caret line="218" column="25" lean-forward="false" selection-start-line="218" selection-start-column="25" selection-end-line="218" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -76,6 +76,7 @@
       <find>&quot;red&quot;</find>
       <find>button</find>
       <find>nex</find>
+      <find>max</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -252,7 +253,7 @@
       <workItem from="1507143620477" duration="3497000" />
       <workItem from="1507182486086" duration="540000" />
       <workItem from="1507205901358" duration="4230000" />
-      <workItem from="1507381672434" duration="4202000" />
+      <workItem from="1507381672434" duration="4486000" />
     </task>
     <task id="LOCAL-00001" summary="Redesign next button">
       <created>1507208470938</created>
@@ -265,7 +266,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12469000" />
+    <option name="totallyTimeSpent" value="12753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -405,8 +406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="323" column="9" lean-forward="false" selection-start-line="323" selection-start-column="9" selection-end-line="323" selection-end-column="9" />
+        <state relative-caret-position="351">
+          <caret line="218" column="25" lean-forward="false" selection-start-line="218" selection-start-column="25" selection-end-line="218" selection-end-column="25" />
           <folding />
         </state>
       </provider>
