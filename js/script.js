@@ -1,4 +1,5 @@
 window.onload = function() {
+
   var playlistsButtons = document.querySelectorAll('.playlist-link');
   var player = document.querySelector('#audioPlayer');
   var currentPlaylist = [];
@@ -9,6 +10,12 @@ window.onload = function() {
   var isPlaying = false;
   var pausePath = "M2 2h5v12h-5zM9 2h5v12h-5z";
   var playPath = "M3 2l10 6-10 6z";
+
+  // initialisation
+  currentMusic = 0;
+  currentPlaylistPos = 0;
+  setPlaylistParams(0);
+  isPlaying = true;
 
   // Adds eventlisteners to playlists buttons
   // gets data playlist on click, in order to set the current playlist
@@ -150,23 +157,12 @@ window.onload = function() {
 
   // Converts seconds to time (minutes:seconds)
   function getTime(value) {
-    var min = 0
-    var sec = 0
+    var sec_num = parseInt(value, 10);
+    var minutes = Math.floor((sec_num) / 60);
+    var seconds = sec_num - (minutes * 60);
 
-    if (value < 10) {
-      sec = "0" + value
-    } else {
-      if(value < 60) {
-        sec = value
-      } else {
-        min = Math.round(value/60);
-        if(value%60 < 10) {
-          sec = "0" + value%60
-        } else {
-          sec = value%60
-        }
-      }
-    }
-    return min+":"+sec
+    if (minutes < 10) {minutes = "0"+minutes;}
+    if (seconds < 10) {seconds = "0"+seconds;}
+    return minutes+':'+seconds;
   }
 }
