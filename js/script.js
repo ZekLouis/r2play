@@ -1,3 +1,28 @@
+function menu(state) {
+    var menu = document.getElementById('menu-nav');
+    var main = document.getElementById('main-nav');
+    if(state == 'on'){
+        menu.style.left = '0';
+        main.style.left = '105vw';
+    } else {
+        menu.style.left = '-50vw';
+        main.style.left = '0';
+    }
+}
+
+document.onreadystatechange = function () {
+    var open = document.getElementById('nav-icon1');
+    var close = document.getElementById('close');
+
+    open.addEventListener('click', function() {
+        menu('on');
+    });
+
+    close.addEventListener('click', function() {
+        menu('off');
+    });
+};
+
 window.onload = function() {
 
   var playlistsButtons = document.querySelectorAll('.playlist-link');
